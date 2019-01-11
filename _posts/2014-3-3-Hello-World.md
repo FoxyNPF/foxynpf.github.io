@@ -7,4 +7,8 @@ I've put together this blog for anybody who has an interest in Malware and what 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-Test
+My plan is to update this blog regularly with reports on any malware that I have actively seen in the wild and feedback the steps taken in my analysis and also the relevant IOC's.
+
+We will see where this goes!
+
+Neil
