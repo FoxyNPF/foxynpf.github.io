@@ -3,11 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
-I've worked in Cyber Security for around 5 years for two major UK Telcos.
+I've worked in Cyber Security for around 5 years for two major UK Telcos as self confessed geek I love what i do for a living.
 
-The majority of this time has been in 3rd line/CERT type roles as an escalation point for high level incidents.
+The majority of my time working in cybe has been in 3rd line/CERT type roles as an escalation point for high level incidents, this has also included a lot of threat hunting and in my current role a lot of focus on malware analysis.
 
-My current role involves a lot of malware analysis and where possible I will be sharing this research on here in that hope that it is of use and or interest to the wider community.
+I love what I do and think there is real value in sharing knowledge amongst the cyber industry. This is why i decided to setup this site, I will be sharing malware analysis I have conducted along with anything that i think is particluarly cool such as opensource tools etc...
 
 ### More Information
 
