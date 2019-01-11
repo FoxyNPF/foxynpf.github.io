@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 1. Malware, Threat Hunting & IR
+title: 1. Welcome to my Blog
 ---
 
-As an Incident Responder i thought this would be an ideal platform to share malware analysis I have conducted with the security community
+I've put together this blog for anybody who has an interest in Malware and what goes along with it.
 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
