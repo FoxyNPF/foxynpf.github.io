@@ -12,6 +12,4 @@ I love what I do and think there is real value in sharing knowledge amongst the 
 I will be sharing write ups of malware analysis I have performed along with anything that i think is particluarly cool/useful relating to
 incident response.
 
-### Contact me
-
-[neil.p.fox@outlook.com](mailto:neil.p.fox@outlook.com)
+Neil
