@@ -1,9 +1,10 @@
 ---
 layout: post
-title: All things Malware, Threat Hunting & Incident Response
+title: Malware, Threat Hunting & Incident Response Stuff
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+As an Incident Responder i thought this would be an ideal platform to share malware analysis I have conducted with the security community
+
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
