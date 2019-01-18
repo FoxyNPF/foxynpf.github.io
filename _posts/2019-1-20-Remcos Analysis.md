@@ -7,4 +7,5 @@ Process Hacker
 Burp Suite
 
 When I open the document I can see from procmon that the process EQNEDT32.EXE has been launched:
-![Procmon](/images//remcos/process.png)
+
+![Procmon](/images/remcos/remcos_ph.png)
