@@ -31,7 +31,7 @@ MD5 Hash of file - f064826cb414957032c0fbba66a26fb5
 
 In process hacker we can also view the strings of the process running in memory.
 
-![strings](/images/remcos/strings.png)
+![strings](/images/remcos/remcos.png)
 
 Here we can see the type of malware has now been identified as Remcos. There is also a filepath referencing a logs.dat along, reference to a keylogger along with a couple of C2’s.
 
