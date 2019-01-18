@@ -17,6 +17,7 @@ The process associated with Equation editor is then creating a new process:
 PID: 3180, Command line: C:\Users\Admin\AppData\Roaming\swsx-audio.exe
 
 I have used Burp Suite to proxy the traffic and can see the C2 that was called by the document:
+
 hxxp://aervoes.com/css/viccx[.]exe
 
 ![Burp](/images/remcos/burp.png)
