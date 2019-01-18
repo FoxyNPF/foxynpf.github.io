@@ -31,10 +31,20 @@ MD5 Hash of file - f064826cb414957032c0fbba66a26fb5
 
 In process hacker we can also view the strings of the process running in memory.
 
-![strings](/images/remcos/remcos.png)
+![Strings](/images/remcos/remcos.png)
 
 Here we can see the type of malware has now been identified as Remcos. There is also a filepath referencing a logs.dat along, reference to a keylogger along with a couple of C2’s.
 
 By navigating to the location in Windows Explorer and opening the file with Notepad we can confirm that the malware is logging the users keystrokes:
 
-![strings](/images/remcos/log.png)
+![Keylogger](/images/remcos/log.png)
+
+In order for the malware to remain persistent on the device I ran Autoruns to see what modifications had been made to the device by the malware:
+
+![Persistence](/images/remcos/persistence.png)
+
+The above output shows a vbs script has been created and set to launch at startup. By navigating to the scripts location and opening the file in notepad we can see that the script invokes the previously identified swsx-audio.exe:
+
+set ZntmdjU = CReateObjEct("WscrIPt.Shell")
+ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""
+
