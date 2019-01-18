@@ -1,4 +1,4 @@
-This post outlines the analysis taken for a phishing email that contained a malicious Excel file that is downloading Remcos malware.
+This post outlines the analysis taken for a phishing email that contained a malicious Excel file that downloads Remcos malware.
 
 Before opening the document I had the following programs running in my virtual environment:
 
