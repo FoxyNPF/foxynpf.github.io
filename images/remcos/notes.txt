@@ -1,0 +1,107 @@
+C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+set ZntmdjU = CReateObjEct("WscrIPt.Shell")
+ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""
+
+0x18e5a0 (12): 194.5.99.119
+0x29e0b9 (29): 185.148.241.49:1949:@Gentle11
+
+p:\Users\Admin\AppData\Roaming\remcos\logs.dat
+
+
+PS C:\Windows\system32> cd C:\Users\Admin\Downloads\ProcessSpawnControl-master
+PS C:\Users\Admin\Downloads\ProcessSpawnControl-master> .\ProcessSpawnControl.ps1
+
+(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)(?:\/\d{1,2})?
+
+(1) New process spawned:
+PID:             2632
+Name:            EXCEL.EXE
+PPID:            2884
+Parent name:     explorer
+CommandLine:     "C:\Program Files (x86)\Microsoft Office\Office12\EXCEL.EXE" /e
+Trying to suspend process: 2632
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 2632
+
+(2) New process spawned:
+PID:             1288
+Name:            svchost.exe
+PPID:            480
+Parent name:     services
+CommandLine:
+Suspend-Process : Unable to open process. Not elevated? Process doesn't exist anymore?
+At C:\Users\Admin\Downloads\ProcessSpawnControl-master\ProcessSpawnControl.ps1:307 char:21
++         if(Suspend-Process <<<<  -processID $e.ProcessId){
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Suspend-Proce
+
+
+(3) New process spawned:
+PID:             1436
+Name:            EQNEDT32.EXE
+PPID:            620
+Parent name:     svchost
+CommandLine:     "C:\Program Files (x86)\Common Files\Microsoft Shared\EQUATION\EQNEDT32.EXE"
+Trying to suspend process: 1436
+Process is suspended. Creating GUI popup.
+
+(4) New process spawned:
+PID:             2724
+Name:            dllhost.exe
+PPID:            620
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079
+Process ignored as per configuration.
+
+Trying to resume process: 1436
+
+(5) New process spawned:
+PID:             3716
+Name:            swsx-audio.exe
+PPID:            1436
+Parent name:     EQNEDT32
+CommandLine:     C:\Users\Admin\AppData\Roaming\swsx-audio.exe
+Trying to suspend process: 3716
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 3716
+
+(6) New process spawned:
+PID:             3180
+Name:            swsx-audio.exe
+PPID:            3716
+Parent name:     unknown
+CommandLine:     C:\Users\Admin\AppData\Roaming\swsx-audio.exe
+Trying to suspend process: 3180
+Process is suspended. Creating GUI popup.
+
+(7) New process spawned:
+PID:             3744
+Name:            swsx-audio.exe
+PPID:            3716
+Parent name:     unknown
+CommandLine:     "C:\Users\Admin\AppData\Roaming\swsx-audio.exe" 2 3180 4192480
+Trying to suspend process: 3744
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 3744
+
+Trying to resume process: 3180
+
+(8) New process spawned:
+PID:             1880
+Name:            SearchProtocolHost.exe
+PPID:            608
+Parent name:     SearchIndexer
+CommandLine:
+Process ignored as per configuration.
+
+(9) New process spawned:
+PID:             3652
+Name:            SearchFilterHost.exe
+PPID:            608
+Parent name:     SearchIndexer
+CommandLine:
+Process ignored as per configuration.
