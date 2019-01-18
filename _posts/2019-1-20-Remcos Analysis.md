@@ -21,3 +21,20 @@ I have used Burp Suite to proxy the traffic and can see the C2 that was called b
 hxxp://aervoes.com/css/viccx[.]exe
 
 ![Burp](/images/remcos/burp.png)
+
+The payload is downloaded to the victim machine and from process hacker or process monitor we can see the original name of viccx.exe from burp  has been renamed to swsx-audio.exe.
+
+From process hacker we can now right click the process we have identified and open the location where it has been written to disk:
+
+C:\Users\Admin\AppData\Roaming\swsx-audio.exe
+MD5 Hash of file - f064826cb414957032c0fbba66a26fb5
+
+In process hacker we can also view the strings of the process running in memory.
+
+![strings](/images/remcos/strings.png)
+
+Here we can see the type of malware has now been identified as Remcos. There is also a filepath referencing a logs.dat along, reference to a keylogger along with a couple of C2’s.
+
+By navigating to the location in Windows Explorer and opening the file with Notepad we can confirm that the malware is logging the users keystrokes:
+
+![strings](/images/remcos/log.png)
