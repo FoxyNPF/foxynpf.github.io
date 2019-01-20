@@ -7,7 +7,7 @@ Before opening the document I had the following tools running in my virtual envi
 3. [Burp Suite](https://portswigger.net/burp/communitydownload)
 4. [Autoruns](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns)
 
-A common tactic used by attackers to infected a machine is to send a phishing email which contains a malicious office document. The documents often contain macros which have been configured to download the malware from a compromised website.
+A common tactic used by attackers to compromise a device is to send a phishing email which contains a malicious office document. The documents often contain macros which have been configured to download the malware from a compromised website.
 
 However in this example when opening the document there is no prompt to enable macros. Instead the document launches a process called **'EQNEDT32.EXE':
 
@@ -17,7 +17,7 @@ This is evidence of the malicious document exploiting a vulnerability in Microso
 
 From using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
 
-hxxp://aervoes.com/css/viccx[.]exe
+_hxxp://aervoes.com/css/viccx[.]exe
 
 ![Burp](/images/remcos/burp.png)
 
@@ -42,9 +42,9 @@ By using Autoruns it is possible to identify what modifications had been made to
 
 The above output shows a vbs script called datemanger.vbs has been created and set to launch at startup. By navigating to the scripts location and opening the file in notepad we can see that the script launches swsx-audio.exe:
 
-**_set ZntmdjU = CReateObjEct("WscrIPt.Shell")**
+_set ZntmdjU = CReateObjEct("WscrIPt.Shell")
 
-**_ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""**
+_ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""
   
 **File Hashes:**
 
