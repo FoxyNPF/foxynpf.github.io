@@ -1,7 +1,5 @@
 I thought this would be a good starting point to share some simple behavioural malware analysis. The sample in this post came from a phishing email that contained a malicious Microsoft Excel file
 
-Remcos is a commercialised RAT which gets it's name from "Remote Control and Surveillance".
-
 Before opening the document I had the following tools running in my virtual environment:
 
 1. [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
