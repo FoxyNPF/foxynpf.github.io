@@ -1,5 +1,7 @@
 I thought this would be a good starting point to share some simple behavioural malware analysis. The sample in this post came from a phishing email that contained a malicious Microsoft Excel file
 
+Remcos is a commercialised RAT which gets it's name from "Remote Control and Surveillance".
+
 Before opening the document I had the following tools running in my virtual environment:
 
 1. [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
@@ -15,7 +17,7 @@ However in this example when opening the document there is no prompt to enable m
 
 This is evidence of the malicious document exploiting a vulnerability in Microsoft’s Equation Editor (CVE-2017-11882).
 
-From using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
+Using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
 
 _hxxp://aervoes.com/css/viccx[.]exe_
 
