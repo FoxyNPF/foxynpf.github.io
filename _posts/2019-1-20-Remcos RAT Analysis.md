@@ -42,7 +42,7 @@ By using Autoruns it is possible to identify what modifications had been made to
 
 The above output shows a vbs script called datemanger.vbs has been created and set to launch at startup. By navigating to the scripts location and opening the file in notepad we can see that the script launches swsx-audio.exe:
 
-![Script](/images/remocos/script.png)
+![Script](/images/remcos/script.png)
   
 **File Hashes:**
 
