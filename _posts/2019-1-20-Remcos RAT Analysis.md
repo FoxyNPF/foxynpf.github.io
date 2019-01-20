@@ -23,7 +23,7 @@ _hxxp://aervoes.com/css/viccx[.]exe
 
 We can also see from the URL the original filename is 'viccx.exe'. This is then renamed to 'swsx-audio.exe' and a new process is created as the payload is launched:
 
-_PID: 3180, Command line: C:\Users\Admin\AppData\Roaming\swsx-audio.exe_
+![Process Tree](/images/remcos/processtree.png)
 
 Using Process Hacker we are able to view the strings of the process running in memory and extract some useful information:
 
@@ -42,9 +42,7 @@ By using Autoruns it is possible to identify what modifications had been made to
 
 The above output shows a vbs script called datemanger.vbs has been created and set to launch at startup. By navigating to the scripts location and opening the file in notepad we can see that the script launches swsx-audio.exe:
 
-_set ZntmdjU = CReateObjEct("WscrIPt.Shell")
-
-_ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""
+![Script](/images/remocos/script.png)
   
 **File Hashes:**
 
