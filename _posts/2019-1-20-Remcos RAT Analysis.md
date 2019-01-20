@@ -9,7 +9,7 @@ Before opening the document I had the following tools running in my virtual envi
 
 A common tactic used by attackers to compromise a device is to send a phishing email which contains a malicious office document. The documents often contain macros which have been configured to download the malware from a compromised website.
 
-However in this example when opening the document there is no prompt to enable macros. Instead the document launches a process called **'EQNEDT32.EXE':
+However in this example when opening the document there is no prompt to enable macros. Instead the document launches a process called 'EQNEDT32.EXE':
 
 ![Procmon](/images/remcos/remcos_ph.png)
 
