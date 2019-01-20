@@ -9,7 +9,7 @@ Before opening the document I had the following tools running in my virtual envi
 
 A common tactic used by attackers to infected a machine is to send a phishing email which contains a malicious office document. The documents often use macros which have been configured to download the malware from a compromised website.
 
-However in this example when opening the document there is no prompt to enable macros. Instead he document launches a process called 'EQNEDT32.EXE':
+However in this example when opening the document there is no prompt to enable macros. Instead the document launches a process called **'EQNEDT32.EXE':
 
 ![Procmon](/images/remcos/remcos_ph.png)
 
@@ -17,11 +17,11 @@ This is evidence of the malicious document exploiting a vulnerability in Microso
 
 From using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
 
-_hxxp://aervoes.com/css/viccx[.]exe_
+__hxxp://aervoes.com/css/viccx[.]exe_
 
 ![Burp](/images/remcos/burp.png)
 
-From the above image can also see from the URL the original filename is 'viccx.exe'. This is then renamed to 'swsx-audio.exe' and a new process is created as the payload is launched:
+We can also see from the URL the original filename is 'viccx.exe'. This is then renamed to 'swsx-audio.exe' and a new process is created as the payload is launched:
 
 _PID: 3180, Command line: C:\Users\Admin\AppData\Roaming\swsx-audio.exe_
 
@@ -29,9 +29,9 @@ Using Process Hacker we are able to view the strings of the process running in m
 
 ![Strings](/images/remcos/remcos.png)
 
-Here the type of malware is identified as Remcos by the filepath. The filepath references a logs.dat and there is also reference to a keylogger along with a couple of C2’s.
+Here the type of malware is identified as Remcos by the filepath. The filepath references a 'logs.dat' and there is also reference to a keylogger along with a couple of C2’s.
 
-By navigating to the filepath location in Windows Explorer and opening the logs.dat file with Notepad we can confirm that the malware is logging the users keystrokes. The C2's will be where the recorded log file is uploaded to by the malware in the hope that potentially some creds have been captured:
+By navigating to the filepath location in Windows Explorer and opening the logs.dat file with Notepad we can confirm that the malware is logging the users keystrokes. The C2's will be where the recorded log file is uploaded to by the malware:
 
 ![Keylogger](/images/remcos/log.png)
 
