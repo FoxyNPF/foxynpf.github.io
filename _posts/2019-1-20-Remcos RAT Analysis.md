@@ -17,7 +17,7 @@ This is evidence of the malicious document exploiting a vulnerability in Microso
 
 From using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
 
-**_hxxp://aervoes.com/css/viccx[.]exe
+hxxp://aervoes.com/css/viccx[.]exe
 
 ![Burp](/images/remcos/burp.png)
 
@@ -42,17 +42,20 @@ By using Autoruns it is possible to identify what modifications had been made to
 
 The above output shows a vbs script called datemanger.vbs has been created and set to launch at startup. By navigating to the scripts location and opening the file in notepad we can see that the script launches swsx-audio.exe:
 
-**_set ZntmdjU = CReateObjEct("WscrIPt.Shell")
+**_set ZntmdjU = CReateObjEct("WscrIPt.Shell")**
 
-**_ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""
+**_ZNtMDJU.run """C:\Users\Admin\Desktop\swsx-audio.exe"""**
   
-**File Hashes:
+**File Hashes:**
 
 RO#12013.xlsx - b9acbb90c6b816d574f489c388c356b1
+
 C:\Users\Admin\AppData\Roaming\swsx-audio.exe - f064826cb414957032c0fbba66a26fb5
 
-**C2's:
+**C2's:**
 
 hxxp://aervoes.com/css/viccx[.]exe
+
 194.5.99.119
+
 185.148.241.49:1949
