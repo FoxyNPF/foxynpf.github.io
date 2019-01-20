@@ -17,7 +17,7 @@ This is evidence of the malicious document exploiting a vulnerability in Microso
 
 From using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
 
-_hxxp://aervoes.com/css/viccx[.]exe
+_hxxp://aervoes.com/css/viccx[.]exe_
 
 ![Burp](/images/remcos/burp.png)
 
