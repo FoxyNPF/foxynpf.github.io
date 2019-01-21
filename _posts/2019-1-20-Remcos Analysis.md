@@ -1,19 +1,21 @@
 I thought this would be a good starting point to share some simple behavioural malware analysis. The sample in this post came from a phishing email that contained a malicious Microsoft Excel file
 
-Before opening the document I had the following tools running in my virtual environment:
+The following opensource tools are used for the analysis and run in a virtual environment:
 
 1. [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
 2. [Process Hacker](https://processhacker.sourceforge.io/downloads.php)
 3. [Burp Suite](https://portswigger.net/burp/communitydownload)
 4. [Autoruns](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns)
 
-A common tactic used by attackers to compromise a device is to send a phishing email which contains a malicious office document. The documents often contain macros which have been configured to download the malware from a compromised website.
+A common tactic used by attackers to compromise a device is to send a phishing email which contains a malicious office document. The documents often contain macros which have been configured to download malware from a compromised website.
 
 However in this example when opening the document there is no prompt to enable macros. Instead the document launches a process called 'EQNEDT32.EXE':
 
 ![Procmon](/images/remcos/remcos_ph.png)
 
-This is evidence of the malicious document exploiting a vulnerability in Microsoft’s Equation Editor (CVE-2017-11882).
+EQNEDT32.EXE relates to Microsoft Equation Editor for which there was a vulnerability disclosed under [CVE-2017-11882](https://nvd.nist.gov/vuln/detail/CVE-2017-11882).
+
+From opening the document and seeing this process being launched it is safe to assume that the document is exploiting this vulnerability to perform some malicious activity.
 
 Using Burp to proxy the traffic we can see that the exploit downloads the payload from the following location:
 
