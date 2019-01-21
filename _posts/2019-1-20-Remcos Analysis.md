@@ -1,4 +1,4 @@
-I thought this would be a good starting point to share some simple behavioural malware analysis. The sample in this post came from a phishing email that contained a malicious Microsoft Excel file
+I thought this would be a good starting point to share some simple behavioural malware analysis. The sample in this post came from a phishing email that contained a malicious Microsoft Excel file.
 
 The following opensource tools are used for the analysis and run in a virtual environment:
 
