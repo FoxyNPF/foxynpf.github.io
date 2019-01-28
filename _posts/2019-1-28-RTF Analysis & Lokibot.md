@@ -131,7 +131,7 @@ hxxp://doctkry[.]pw/gate/sote/fre.php
 
 **Additional Notes:**
 
-The exploit used in this document is [CVE-2017-0802](https://github.com/rxwx/CVE-2018-0802), the exploit uses the Packager OLE object to drop an embedded payload into the %TMP% directory, and then executes the file using a short command via a WinExec call.
+The exploit used in this document is [CVE-2018-0802](https://github.com/rxwx/CVE-2018-0802), the exploit uses the Packager OLE object to drop an embedded payload into the %TMP% directory, and then executes the file using a short command via a WinExec call.
 
 In the past I have also implemented pro-active measures in proxy logs to check for any traffic which either contains the string "Charon; Inferno" in the user-agent or "/fre.php" to identify potential Loki infections.
 
