@@ -95,7 +95,7 @@ The following process activity is generated when the document is opened:
 
 Microsoft Equation Editor is launched (EQNEDT32.EXE), the file A.R is dropped onto the machine and a command prompt is created to launch the "A.R" file:
 
-``_PID: 3824, Command line: cmd /c %tmp%\A.R_``
+``PID: 3824, Command line: cmd /c %tmp%\A.R``
 
 This is the same command identified in rtfdump earlier.
 
