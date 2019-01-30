@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <generator>RSS Builder by B!Soft</generator>
+    <title>neil-fox.com</title>
+    <link>www.neil-fox.com</link>
+    <description>Malware, Threat Hunting &amp; Incident Response</description>
+    <language>en-gb</language>
+    <item>
+      <title>Analysing a Malicious RTF that drops Lokibot</title>
+      <pubDate>Mon, 28 Jan 2019 21:00:00 GMT</pubDate>
+      <link>https://neil-fox.github.io/RTF-Analysis-&amp;-Lokibot/</link>
+      <category>Malware Analysis</category>
+      <description><![CDATA[Analysis of a malicious RTF file using rtfdump and behavioural analysis of the malware this file drops]]></description>
+    </item>
+  </channel>
+</rss>
