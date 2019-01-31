@@ -84,3 +84,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# RSS Metadata
+name: www.neil-fox.com
+description: Malware, Threat Hunting & Incident Response
+url: http://www.neil-fox.com
