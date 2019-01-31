@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin: neil-fox-1331a4b8
   pinterest:
-  rss: www.neil-fox.com
+  rss: 
   twitter: neilpfox
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -88,4 +88,4 @@ exclude:
 # RSS Metadata
 name: www.neil-fox.com
 description: Malware, Threat Hunting & Incident Response
-url: http://www.neil-fox.github.io
+url: https://www.neil-fox.github.io
