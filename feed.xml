@@ -1,24 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-  <channel>
-    <generator>RSS Builder by B!Soft</generator>
-    <title>neil-fox.com</title>
-    <link>www.neil-fox.com</link>
-    <description>Malware, Threat Hunting &amp; Incident Response</description>
-    <language>en-gb</language>
-    <image>
-      <title>neil-fox.com</title>
-      <link>www.neil-fox.com</link>
-      <url>https://neil-fox.github.io/images/foxcircle.jpeg</url>
-      <width>200</width>
-      <height>200</height>
-    </image>
-    <item>
-      <title>Analysing a Malicious RTF that drops Lokibot</title>
-      <pubDate>Mon, 28 Jan 2019 21:00:00 GMT</pubDate>
-      <link>https://neil-fox.github.io/RTF-Analysis-&amp;-Lokibot/</link>
-      <category>Malware Analysis</category>
-      <description><![CDATA[Analysis of a malicious RTF file using rtfdump and behavioural analysis of the malware this file drops]]></description>
-    </item>
-  </channel>
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.name | xml_escape }}</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+		{% for post in site.posts limit:10 %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+				<description>{{ post.content | xml_escape }}</description>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<link>{{ site.url }}{{ post.url }}</link>
+				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			</item>
+		{% endfor %}
+	</channel>
 </rss>
