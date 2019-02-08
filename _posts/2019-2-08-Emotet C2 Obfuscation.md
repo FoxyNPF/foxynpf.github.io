@@ -2,9 +2,9 @@ I've taken a look at a couple of Emotet emails today and noticed they have tried
 
 This post outlines how to get the C2's and also highlights a couple of cool tools I use when capturing command line output from malware.
 
-http://www.kahusecurity.com/posts/cmd_watcher_updated.html - This is great tool for displaying any commands that are being run by a piece of malware and having that information recorded.
+[CMD Watcher](http://www.kahusecurity.com/posts/cmd_watcher_updated.html) - This is great tool for displaying any commands that are being run by a piece of malware and having that information recorded.
 
-https://github.com/felixweyne/ProcessSpawnControl - This is a really useful tool in that it will suspend any newly created processes. The user then has the option to terminate the process or allow it to run.
+[Process Spawn Control](https://github.com/felixweyne/ProcessSpawnControl) - This is a really useful tool in that it will suspend any newly created processes. The user then has the option to terminate the process or allow it to run.
 
 **Email Subject:**
 
