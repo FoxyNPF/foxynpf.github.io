@@ -185,7 +185,7 @@ Hover your mouse over the correct version of the IOS and you will get a pop-up t
 
 Once the correct IOS and hash has been identified this should be compared to the 2 hashes that were created earlier in this post for the IOS file stored in flash and for the image capture that was uploaded to the ftp server.
 
-To analyse the memory dumps i recommend Didier Stevens [Network Appliance Forensic Toolkit](https://blog.didierstevens.com/programs/network-appliance-forensic-toolkit/). This is an awesome tool hat can pull pcap data and other useful artefacts from the memory dumps of a cisco router.
+To analyse the memory dumps I recommend Didier Stevens [Network Appliance Forensic Toolkit](https://blog.didierstevens.com/programs/network-appliance-forensic-toolkit/). This is an awesome tool that can pull pcap data and other useful artifacts from the memory dumps of a cisco router.
 
 ## 9.	 Cisco commands used in this post
 
