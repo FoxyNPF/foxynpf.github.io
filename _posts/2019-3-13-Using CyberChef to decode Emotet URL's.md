@@ -20,7 +20,7 @@ Set the ‘Find / Replace’ option to find ‘+’ and set it to detect on ‘S
 
 This should now provide you with the following output:
 
-![CyberChef](/images/CC/3.png)
+![CyberChef](/images/CC/3.PNG)
 
 This now contains another level of Base64 so copy and paste this into Cyber Chef as a new recipe.
 
