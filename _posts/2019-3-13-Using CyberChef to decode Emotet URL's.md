@@ -35,4 +35,4 @@ Use the following operations:
 
 ![CyberChef](/images/CC/7.png)
 
-The above image shows the decoded and defanged URL's which can now be extracted and safey shared.
+The above image shows the decoded and defanged URL's which can now be extracted and safely shared.
