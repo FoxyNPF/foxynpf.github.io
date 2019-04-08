@@ -74,7 +74,7 @@ This file contains obfuscated Unicode content:
 
 ![vba](/images/SQLrat/mspromo_hex.png)
 
-When ‘mspromo.dot’ is opened it forces Word to open the document Unicode which obfuscates the content:
+When ‘mspromo.dot’ is opened it forces Word to open the document in Unicode which obfuscates the content:
 
 ![mspromo.dot](/images/SQLrat/mspromo_chinese.png)
 
