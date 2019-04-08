@@ -126,8 +126,7 @@ Contents of String.prototype.ouCn:
 ![init.dot](/images/SQLrat/ouCn.png)
 
 The value of ‘ret’ on line 4 is blank, when the function returns it will contain the de-obfuscated contents from mspromo.dot.
-In line 5 a ‘for’ loop is declared which is going to iterate over the content of the variable ‘ret’. ‘this.length’ refers to the length of the content stored in ‘ret’ which is the content of ‘mspromo.dot’.
-So, it iterates over the obfuscated content and then invokes the string prototype functions to perform the de-obfuscation.
+In line 5 a ‘for’ loop is declared which is going to iterate over the length of the contents of “this”. And “this” is the output of reading mspromo.dot from calling ouPr. So, it iterates over the obfuscated content and then invokes the string prototype functions to deobfuscate.
 
 The code in line 6 is broken down as follows:
 
