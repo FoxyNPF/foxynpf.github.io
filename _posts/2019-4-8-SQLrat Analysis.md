@@ -21,7 +21,7 @@ The password can be overwritten by putting the document into a hex editor and se
 ![dpb](/images/SQLrat/dpx.png)
 
 The string "4B49E7B92ED62ED6D12A2FD6EE17006F301EB3709E64BDD698D4C61FA3EA5BBD76C1F5A3EF" is the encrypted password.
-Once the file is saved and the document is reopened a new password can be set and the code can now be viewed:
+Once the file is saved and the document is reopened a new password can be set and the code can now be viewed.
 
 Within the code of the VBA the filenames of three documents are declared:
 
