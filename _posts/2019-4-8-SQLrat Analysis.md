@@ -56,7 +56,7 @@ When the malicious Word document is opened and the VBS script is launched the fo
 ``C:\Users\Admin\AppData\Roaming\Microsoft\Templates\dir.nfo``  
 ``MD5 - e2e80557fabc309e94103186edfde664``  
 
-The file ‘dir.nfo’ file was created TO store a unique victim string consisting of the victim MAC address along with the volume serial number.
+The file ‘dir.nfo’ file was created to store a unique victim string consisting of the victim MAC address along with the volume serial number.
 
 ``C:\Users\Admin\AppData\Roaming\Microsoft\Templates\init.dot``  
 ``MD5 - 07523fe39e54a679f20e06c8389dd03a``  
@@ -113,9 +113,9 @@ The hex values converted to ASCII:
 
 The image below shows that the de-obfuscated file that is being opened is ‘mspromo.dot’, one of the files which has been dropped by the Word document. The values 1, 0, and -1 relate to the [‘OpenTextFile’](https://www.w3schools.com/asp/met_opentextfile.asp) function in JavaScript:
 
+•	-1 – Opens the file as Unicode  
+•	0 – Opens the file as ASCII  
 •	1 – Opens file for reading  
-•	2 – Opens the file as Unicode  
-•	3 – Opens the file as ASCII  
 
 The opening of the file is assigned the variable ‘tx’ in line 11 and in line 12 the file contents are read and stored in the variable ‘ret’. The document is then closed.
 
@@ -127,7 +127,7 @@ Contents of String.prototype.ouCn:
 
 The value of ‘ret’ on line 4 is blank, when the function returns it will contain the de-obfuscated contents from mspromo.dot.
 In line 5 a ‘for’ loop is declared which is going to iterate over the content of the variable ‘ret’. ‘this.length’ refers to the length of the content stored in ‘ret’ which is the content of ‘mspromo.dot’.
-In line 5 a ‘for’ loop iterates over the length of the contents of ‘this’, ‘this’ is the output of reading ‘mspromo.dot’ from calling ‘ouPr’. So, it iterates over the obfuscated content and then invokes the string prototype functions to perform the de-obfuscation.
+So, it iterates over the obfuscated content and then invokes the string prototype functions to perform the de-obfuscation.
 
 The code in line 6 is broken down as follows:
 
