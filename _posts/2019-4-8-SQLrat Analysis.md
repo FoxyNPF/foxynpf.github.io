@@ -203,6 +203,8 @@ wscript.exe launching ‘second.dot’:
 
 ## Persistence
 
+![persistence](/images/SQLrat/persistence.png)
+
 Two tasks created set to invoke ‘wscript.exe’ that will launch ‘init.doc’ and ‘second.dot’
 The task names identified in the original VBA macro code are in use ‘Micriosoft update service’ and ‘System stability service’. 
 These tasks are then set to run at 9:00 everyday, after this has been triggered they will then run every three minutes. The trigger expires on 01/02/2026 09:10:00.
@@ -210,6 +212,3 @@ These tasks are then set to run at 9:00 everyday, after this has been triggered 
 ## C2
 
 31[.]18[.]219[.]133
-
-
-
