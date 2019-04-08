@@ -51,7 +51,7 @@ The scheduled tasks for ‘init.doc’ and ‘second.dot’ are given the follow
 
 ![vba](/images/SQLrat/vb6.png)
 
-When the malicious Word document is opened and the VBS script is launched the following files are dropped by the document, which matches the previous static analysis of the document:
+When the malicious Word document is opened and the VBA code is launched the following files are dropped by the document, which matches the previous static analysis of the document:
 
 ``C:\Users\Admin\AppData\Roaming\Microsoft\Templates\dir.nfo``  
 ``MD5 - e2e80557fabc309e94103186edfde664``  
