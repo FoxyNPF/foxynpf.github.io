@@ -1,8 +1,8 @@
 I’ve recently been looking into what options are available for opensource honeypots, I’ve always wanted to setup a honeypot and see what malware samples I can get hold of and also see what threat intel I can generate. I thought I would do a bit of a write up on what honeypots I have been playing around with and how to replicate what I have setup.
 
-When looking into setting up some honeypots there were two options which seemed interesting. The first was Dionaea which is designed to capture malware samples. The second was Cowrie which is an SSH honeypot, designed into tricking attackers into thinking they have shell in a Linux environment and they are able to download their malware into the honeypot but not run it.
+When looking into setting up some honeypots there were two options which seemed interesting. The first was Dionaea which is designed to capture malware samples. The second was Cowrie which is an SSH honeypot, designed into tricking attackers into thinking they have shell in a Linux environment. The attackers are able to download download malware into the honeypot however it is siphoned off so we can analyse it.
 
-Digging a little deeper I came across something called MHN (Modern Honey Network). This allows you to setup multiple honeypot sensors, including but not limited to Dionaea and Cowrie, which then feedback the attack data to a centralised server. The central MHN server collates the attack data and presents it on a nice looking dashboard, this will include the IP’s that have hit your honeypots, malware hashes that have been dropped, snort signatures etc…
+Digging a little deeper I came across something called MHN (Modern Honey Network). This allows you to setup multiple honeypot sensors, including but not limited to Dionaea and Cowrie, which then feedback the attack data to a centralised server. The central MHN server collates the attack data and presents it on a nice looking dashboard, this will include the IP’s that have hit your honeypots, hashes of alware that have been dropped, snort signatures etc…
 
 There is also a cool attack map, which at the time of writing only worked for my Dionaea sensor.
 
@@ -10,7 +10,7 @@ There is also a cool attack map, which at the time of writing only worked for my
 
 I used Azure as my playground to setup some honeypots and used the following setup for my main MHN server. For my servers I didn’t go crazy on allocating resources as this was me testing and playing around to see what capabilities MHN offered.
 
-For the MHN server I used Linux Ubuntu 18.04 and allocated a 30GB HD and 8GB RAM. On install you have the option to open a couple of select ports, I just went with 22 and provided a public key for SSH access so I could admin the box.
+For the MHN server I used Linux Ubuntu 18.04 and allocated a 30GB HD and 8GB RAM. On install you have the option to open a couple of ports, I just went with 22 and provided a public key for SSH access so I could admin the box.
 
 Setup of the MHN server is incredibly simple, once you have logged on to your new box run the following commands:
 
@@ -51,7 +51,7 @@ Once you have MHN installed the fun can begin. Enter the IP address of your MHN 
 
 ## Installing Dionaea
 
-Select the ‘Deploy’ option and then select ‘Ubuntu/Raspberyy Pi – Dionaea’:
+Select the ‘Deploy’ option and then select ‘Ubuntu/Raspbery Pi – Dionaea’:
 
 ![dionaea](/images/mhn/deploy.png)
 
@@ -59,9 +59,9 @@ This will now provide you with a script that can be run on a new Ubuntu server. 
 
 ![dionaea](/images/mhn/script.PNG)
 
-Back in Azure create a new device, again I didn’t go crazy allocating space for this device and went with Linux Ubuntu 18.04 and went with 40GB HD and 2 GB RAM.
+Back in Azure create a new device, again I didn’t go crazy allocating space for this device, the OS was Linux Ubuntu 18.04 and I went with 40GB HD and 2 GB RAM.
 
-For the initial setup I only used port 22 and again used a newly created SSH key for access. When using Azure you will also want to create an outbound rule to your MHN server over port 10000 and also open any ports that you want you Dionaea instance to be attacked on, I used 20, 21,139 and 445
+For the initial setup I only opened port 22 and again used a newly created SSH key for access. When using Azure you will also want to create an outbound rule to your MHN server over port 10000 and also open any ports that you want you Dionaea instance to be attacked on, I used 20, 21,139 and 445
 
 SSH onto the box and use the deploy command that MHN generates for you. 
 
@@ -142,7 +142,7 @@ Add the following line to call the script we just created:
 ## Installing Cowrie
 
 Next I started to play around with the Cowrie sensor, this was really fun and I will outline how to customise your honeypot so that it’s not immediately obvious to an attacker that they have accessed an SSH honeypot.
-I used the same setup as my Dionaea instance, Linux Ubuntu 18.04, 40GB HD and 2 GB RAM. Once deployed run ‘sudo apt-get update’ and change the SSH port used for accessing the box.
+I used the same setup as my Dionaea instance, Linux Ubuntu 18.04, 40GB HD and 2 GB RAM. Once deployed run ``sudo apt-get update`` and change the SSH port used for accessing the box.
 
 ``sudo nano /etc/ssh/sshd_config``  
 
