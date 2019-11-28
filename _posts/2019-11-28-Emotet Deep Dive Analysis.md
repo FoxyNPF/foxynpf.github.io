@@ -117,8 +117,10 @@ Decrypted strings:
 
 ![Emotet](/images/Emotet/strings.PNG)
 
-``"engine,finish,magnify,resapi,query,skip,wubi,svcs,router,crypto,backup,hans,xcl,con,edition,wide,loada,themes,syc,
-pink,tran,khmer,chx,excel,foot,wce,allow,play,publish,fwdr,prep,mspterm,nop,define,chore,shlp,maker,proc,cap,top,tablet,sizes,without,pen,dasmrc,move,cmp,rebrand,pixel,after,sms,minimum,umx,cpls,tangent,resw,class,colors,generic,license,mferror,kds,keydef,cable"``
+``"engine,finish,magnify,resapi,query,skip,wubi,svcs,router,crypto,backup,hans,xcl,con,edition,wide,
+loada,themes,syc,pink,tran,khmer,chx,excel,foot,wce,allow,play,publish,fwdr,prep,mspterm,nop,define,
+chore,shlp,maker,proc,cap,top,tablet,sizes,without,pen,dasmrc,move,cmp,rebrand,pixel,after,sms,minimum,
+umx,cpls,tangent,resw,class,colors,generic,license,mferror,kds,keydef,cable"``
 
 Once the strings have been decrypted the malware then begins the process of generating a name using a combination of two strings.
 
@@ -232,10 +234,10 @@ First C2 then loaded:
 
 A list of strings is then generated which will be used to make up the full URL path.
 
-``"teapot,pnp,tpt,splash,site,codec,health,balloon,cab,odbc,badge,dma,psec,cookies,iplk,devices,enable,mult,prov,vermont,
-attrib,schema,iab,chunk,publish,prep,srvc,sess,ringin,nsip,stubs,img,add,xian,jit,free,pdf,loadan,arizona,tlb,forced,results,
-symbols,report,guids,taskbar,child,cone,glitch,entries,between,bml,usbccid,sym,enabled,merge,window,scripts,raster,acquire,
-json,rtm,walk,ban"``
+``"teapot,pnp,tpt,splash,site,codec,health,balloon,cab,odbc,badge,dma,psec,cookies,iplk,devices,
+enable,mult,prov,vermont,attrib,schema,iab,chunk,publish,prep,srvc,sess,ringin,nsip,stubs,img,add,
+xian,jit,free,pdf,loadan,arizona,tlb,forced,results,symbols,report,guids,taskbar,child,cone,glitch,
+entries,between,bml,usbccid,sym,enabled,merge,window,scripts,raster,acquire,json,rtm,walk,ban"``
 
 Before these strings are implemented the formatting of the URL is setup. The below image shows where two strings will be used to make up the URL, this will be the IP address and a string from the list that was generated:
 
