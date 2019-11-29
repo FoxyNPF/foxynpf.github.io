@@ -31,8 +31,6 @@ Process tree listing. This shows PowerShell being used to download the malware t
 The malware uses a common technique of process hollowing to unpack itself in memory. Extracting the unpacked binary can be done by setting a breakpoint on VirtualAlloc in a debugger such as x32dbg. In this example the unpacked malware was then stored in a buffer [edi+54] at location 001d0115.
 The header was prepended with some junk code, once the unpacked binary has been dumped this needs removing using a tool such as HXD to create a clean PE header.
 
-The header was prepended with some junk code, once the unpacked binary has been dumped this needs removing using a tool such as HXD to create a clean PE header.
-
 ![Emotet](/images/Emotet/unpacked.png)
 
 Location of unpacked binary in memory map:
