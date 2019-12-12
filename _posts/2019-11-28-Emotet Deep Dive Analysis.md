@@ -316,8 +316,3 @@ C2:
 Malware copied to the following location:
 
 ``C:\Users\REM\AppData\Local\loadatangent\loadatangent.exe``
-
-Registry key created for malware in the following location:
-
-``HKLM\Software\Microsoft\Windows\CurrentVersion\Run``
-
