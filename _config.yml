@@ -86,6 +86,6 @@ exclude:
   - CNAME
 
 # RSS Metadata
-name: www.neil-fox.com
+name: 0xf0x.com
 description: Malware, Threat Hunting & Incident Response
 url: https://www.neil-fox.github.io
