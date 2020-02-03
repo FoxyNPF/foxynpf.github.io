@@ -224,17 +224,17 @@ From here you can also change the motd, I used the following:
 
 Once I made the changes to the shadow and passwd file  though I found that the attacker could still check the users listed in the home directory and that punk ‘richard’ is still trying to give the game away by having his name there and nobody else.
 
-To get around this there is a script called ‘fscreate’ that can be used to create a fake filesystem for cowrie. The script can be found in the following location:
+To get around this there is a script called ‘createfs’ that can be used to create a fake filesystem for cowrie. The script can be found in the following location:
 
 ``/opt/cowrie/bin``  
 
-I copied this across to my clean new Ubuntu VM with my newly made accounts. I created a folder in /var called ‘.a’ and dropped the script in there. I also renamed the script to ‘fscreate.py’ and then ran the following command:
+I copied this across to my clean new Ubuntu VM with my newly made accounts. I created a folder in /var called ‘.a’ and dropped the script in there and then ran the following command:
 
-``python fscreate.py -d 6 -o ./ubuntu.fs``  
+``python createfs -d 6 -o ./ubuntu.pickle``  
 
 The above command will copy the directory listing on the machine, by running it from ‘/var/.a’ the script won’t be somewhere the attacker would detect the file so is another way of avoiding the honeypot being identified. The argument ‘-d’ is the depth of the filesystem you would like to go and ‘-o’ outputs the content to a file.
 
-SCP the ‘ubuntu.fs’ file into /opt/cowrie/bin, delete the file called ‘fs.pickle’ and rename ‘ubuntu.fs’ to ‘fs.pickle’.
+SCP the ‘ubuntu.fs’ file into /opt/cowrie/bin, delete the file called ‘fs.pickle’ and rename ‘ubuntu.pickle’ to ‘fs.pickle’.
 
 Restart cowrie using the following command: 
 
