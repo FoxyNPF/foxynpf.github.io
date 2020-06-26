@@ -25,10 +25,10 @@ footer-links:
   instagram:
   linkedin: neil-fox-1331a4b8
   pinterest:
-  rss: https://neil-fox.github.io/feed.xml
+  rss:
   twitter: 0xf0x_
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: user/0xf0x
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
