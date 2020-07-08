@@ -1,5 +1,3 @@
-# Overview:
-
 Impacket is a collection of Python tools that can target Windows network protocols. This tool can be used to enumerate users, capture hashes, move laterally and escalate privileges. Impacket has also been used by APT groups, in particular Wizard Spider and Stone Panda.
 
 This blog post contains the syntax for running a large number of the Impacket scripts and also the logs that are generated on the target machines.
