@@ -108,6 +108,8 @@ Multiple  ‘Logon’ and ‘Special Logon’ Event ID’s generated in Windows 
 
 Running processes:
 
+![impacket](/impscreenshots/dcomexecptree.PNG)
+
 ![impacket](/impscreenshots/wmiexecpdot.PNG)
 
 ## Kerberos:
