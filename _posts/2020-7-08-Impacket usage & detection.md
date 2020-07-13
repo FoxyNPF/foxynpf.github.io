@@ -35,7 +35,7 @@ Windows System logs contains correlated event for ‘Service Control Manager’.
 
 ``Service Control Manager – 7045``  
 
-![impacket](/impscreenshots/psexecpysyslog1.PNG)
+![impacket](/impscreenshots/psexecpysyslog1.png)
 
 Event ID 7045 will contain the name of the executable uploaded by psexec.py and the running service that was started.
 
