@@ -31,12 +31,11 @@ Multiple  ‘Logon’ and ‘Special Logon’ Event ID’s generated in Windows 
 
 ![impacket](/impscreenshots/psexecpyseclog.PNG)
 
-Windows System logs contain three correlated events for ‘LSA (LsaSrv)’ and ‘Service Control Manager’.
+Windows System logs contains correlated event for ‘Service Control Manager’.
 
-``LSA (LsaSrv) – 6038``  
 ``Service Control Manager – 7045``  
 
-![impacket](/impscreenshots/psexecpysyslog.PNG)
+![impacket](/impscreenshots/psexecpysyslog1.PNG)
 
 Event ID 7045 will contain the name of the executable uploaded by psexec.py and the running service that was started.
 
