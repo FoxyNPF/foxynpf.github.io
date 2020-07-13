@@ -179,7 +179,11 @@ Contents of Event ID 7040.
 
 ### ntlmrelayx.py
 
-This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.). The script can be used with predefined attacks that can be triggered when a connection is relayed (e.g. create a user through LDAP) or can be executed in SOCKS mode. 
+This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.). The script can be used with predefined attacks that can be triggered when a connection is relayed (e.g. create a user through LDAP) or can be executed in SOCKS mode.
+
+![impacket](/impscreenshots/ntlmrelay1.PNG)
+
+![impacket](/impscreenshots/ntlmrelay2.PNG)
 
 Events below generated from SMB Relay Attack; SAM hashes dumped using ntlmrelayx.py.
 
