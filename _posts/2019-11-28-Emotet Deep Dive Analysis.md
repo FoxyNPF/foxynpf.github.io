@@ -315,4 +315,4 @@ C2:
 
 Malware copied to the following location:
 
-``C:\Users\REM\AppData\Local\loadatangent\loadatangent.exe``
+``C:\Windows\SysWOW64\loadatangent.exe``
