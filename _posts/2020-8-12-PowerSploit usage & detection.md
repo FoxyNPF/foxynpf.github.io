@@ -1,4 +1,4 @@
-PowerSploit is a collection PowerShell modules which each contain a unique set of scripts that can be used in multiple phases of an attack. 
+PowerSploit is a collection of PowerShell modules which each contain a unique set of scripts that can be used in multiple phases of an attack. 
 
 ## PowerSploit
 
@@ -46,7 +46,7 @@ No logs generated from running this command.
 
 ### Get-DomainController
 
-Retrieves information on the Domain Controller such as hostname, ip address and hostname. Additional argument used in the example below specifying domain identified from running the Get-Domain command.
+Retrieves information on the Domain Controller such as hostname and ip address. Additional argument used in the example below specifying domain identified from running the Get-Domain command.
 
 **Figure 3 – Output of GetDomainController**
 
