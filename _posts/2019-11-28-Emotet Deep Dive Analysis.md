@@ -20,11 +20,11 @@ Macros launch encoded PowerShell command to download payload from list of compro
 
 Payload being downloaded from compromised website and subsequent call to attacker C2:
 
-![Emotet](/images/Emotet/processtree.png)
+![Emotet](/images/Emotet/download.PNG)
 
 Process tree listing. This shows PowerShell being used to download the malware to the User directory. Original filename is 215.exe, this is then copied to the malwares persistence location and renamed:
 
-![Emotet](/images/Emotet/download.PNG)
+![Emotet](/images/Emotet/processtree.png)
 
 ## Unpacking the Malware
 
