@@ -1,6 +1,6 @@
 My schedule has been crazy busy lately so apologies for only just getting round to the chapter 2 review of the Zero2Auto course. Part one which covers the 'Algorithms' chapter of the course can be found [here](https://neil-fox.github.io/zero2auto-review,-0x01-Algorithms/).
 
-## 0x01 Initial Stagers Review ##
+## 0x02 Initial Stagers Review ##
 
 This chapter is called ‘Initial Stagers’ and focuses on the stages used by malware to infect a host and how to analyse each stage, this part of the course is broken down into 5 videos:
 
