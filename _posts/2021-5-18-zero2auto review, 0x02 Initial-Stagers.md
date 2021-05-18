@@ -1,4 +1,4 @@
-My schedule has been crazy busy lately so apologies for only just getting round to the chapter 2 review of the Zero2Auto course. Part one which covers Algorithsm can be found [here](https://neil-fox.github.io/zero2auto-review,-0x01-Algorithms/).
+My schedule has been crazy busy lately so apologies for only just getting round to the chapter 2 review of the Zero2Auto course. Part one which covers the 'Algorithms' chapter of the course can be found [here](https://neil-fox.github.io/zero2auto-review,-0x01-Algorithms/).
 
 ## 0x01 Initial Stagers Review ##
 
