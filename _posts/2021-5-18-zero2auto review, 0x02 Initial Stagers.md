@@ -70,25 +70,19 @@ So with that I installed IDA free and reloaded the malware. As part of the demo 
 
 What I enjoyed about this video is I don't tend to use tools such as Ghidra and IDA, my go to tool is x64dbg for analysing malware, what's nice is that using a tool such as IDA allows me to identify key features of the malware and map them out without running the sample.
 
-My first minor complaint of the course was at the next stage of the video where the demo flips to using the pseudo-code feature of IDA. Being an IDA noob I wondered why I was getting an error message. The reason is this feature is only available in IDA Pro, so I was now unable to exactly follow along with the video.
-
-I then had to flip back to Ghidra to use the pseudo-code feature within that tool however it was then decompiled slightly differently to IDA which wasn't ideal.
-
 Once the static analysis is complete we then move into x64dbg to analyse some of the functions we have identified in IDA/Ghidra. What I found really useful is that from identifying our RC4 decryption routine we can now locate it in x64dbg and look at what is being passed to the function on the stack and identify what is being decrypted, result! Again we are provided with some really useful information such as how to identify the RC4 key and the data to be decrypted.
 
 ### Reversing 2nd Stage Loaders - Zloader ###
 
 This video is just under 35 mins in length and some pre-work had been done by the instructor with a function already defined and we are advised how to find the offset so we can then follow along.
 
-We jump to pseudo-code so again so we would need a paid version of IDA or load the sample into Ghidra which wont exactly match the decompiled code in the video.
-
-I gave up on this video on the 2nd time of watching, probably laziness on my part but I didn’t want to mess about with a sample and start looking for offsets to then import it into IDA where I don't have the pseudocode capability.
+I gave up on this video on the 2nd time of watching, probably laziness on my part but I didn’t want to mess about with a sample and start looking for offsets.
 
 ### Writing Automated Config Extractors and Emulators ###
 
 This was another video I really enjoyed and is 1 hour in length. In this lesson we have the goal of automatically identifying c2’s and encryption keys from the payload.
 
-From the analysis covered in previous videos I now had some functions defined in Ghidra, however when you cover this chapter I would recommend having Ghidra and IDA open.
+From the analysis covered in previous videos I now had some functions defined in Ghidra.
 
 ![ghidra](/images/initial_stagers_images/icedid_functions.PNG)
 
